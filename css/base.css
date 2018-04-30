@@ -1,3 +1,13 @@
+.clearfix {
+  zoom:1;
+}
+.clearfix:after{
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
 img {
 	vertical-align: top;  /*解决了图片留白的问题*/
 }
@@ -49,7 +59,7 @@ body {
 /* header部分 */
 header {
 	height: 80px;
-	background-color: #020000;
+	background-color: #7205c3;
 }
 /* 读导航栏begin */
 .shortcut {
@@ -95,12 +105,13 @@ header {
 	position: absolute;
 	top: -30px;
 	left: 0;
+	border-bottom: 1px solid #ededed;
 	box-shadow: 0px 0px 10px rgba(0,0,0,.3);
 }
 .logo a {
 	display: block;
 	width: 190px;
-	height: 170px;
+	height: 169px;
 	background: #fff url(../images/logo.png) no-repeat;
 }
 /* 搜索框 */
@@ -181,7 +192,6 @@ header {
 }
 .navitems li a {
 	font-size: 16px;
-	font-weight: 700;
 	color: #555;
 
 }
@@ -202,7 +212,7 @@ header {
 /* 页面底部 */
 footer {
 	margin-top: 35px;
-	height: 500px;
+	height: 540px;
 	background-color: #eaeaea;
 }
 footer a {
@@ -226,17 +236,17 @@ footer a {
 	left: 38px;
 	width: 36px;
 	height: 43px;
-	background: url(../images/ico.png) no-repeat;
+	background: url(../images/sprite.footer@2x.png) no-repeat;
 	text-indent: -9999px;
 }
-.service 1 h5 {
-	background-position: 0 -43px;
+.service li:nth-child(2) h5 {
+	background-position: -38px 0;
 }
 .service li:nth-child(3) h5 {
-	background-position: 0 -86px;
+	background-position: -76px 0;
 }
 .service li:nth-child(4) h5 {
-	background-position: bottom;
+	background-position: 0 -43px;
 }
 .service li p {
 	font-weight: 700;
@@ -299,12 +309,35 @@ footer a {
 .copyright div p {
 	line-height: 22px;
 }
+.copyright div p:nth-child(4) a {
+	display: inline-block;
+}
+.copyright div p:nth-child(4) i {
+	display: inline-block;
+	background: pink;
+	vertical-align: -1px;/*不知道有什么用*/
+	margin-top: 5px;
+	margin-right: 10px;
+	float: left;
+	width: 16px;
+	height: 13px;
+	background: url(../images/sprite.footer@2x.png) no-repeat;
+}
+.copyright div p:nth-child(4) a:nth-child(1) i {
+	background-position: -38px -44px;
+}
+.copyright div p:nth-child(4) a:nth-child(3) i {
+	background-position: -55px -44px;
+}
+.copyright div p:nth-child(4) i {
+	background-position: -72px -44px;
+}
 .foot-icon a {
 	display: inline-block;
 	width: 103px;
 	height: 33px;
 	background: url(../images/ico_footer.png) no-repeat 0 -150px;
-	/*行内块可以用 text-align: center;来实现居中！*/
+	/*行内块用 text-align: center;来实现居中！*/
 	margin-top: 20px;
 	margin: 20px 4px 0;
 }
@@ -323,3 +356,7 @@ footer a {
 .foot-icon a:nth-child(6) {
 	background-position: -103px -216px;
 }
+.grid_c1 {
+	margin: 0 auto;
+	width: 1190px;
+}/*添加了一个京东页面的内部宽度1190px*/
