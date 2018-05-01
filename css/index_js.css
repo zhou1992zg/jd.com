@@ -1,0 +1,26 @@
+.mobile_show {
+	position: relative;
+}
+.mobile_show1 {
+	position: relative;
+}
+.mobile_show_box {
+	position: absolute;
+	top: -1px;
+	left: -81px;
+	width: 140px;
+	height: 200px;
+	background: pink;
+	z-index: 9999999999999999;
+	display: inline-block;
+}
+.mobile_show_box1 {
+	position: absolute;
+	top: -1px;
+	left: -81px;
+	width: 140px;
+	height: 200px;
+	background: pink;
+	z-index: 9999999999999999;
+	display: none;
+}
