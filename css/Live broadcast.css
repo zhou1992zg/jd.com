@@ -1,39 +1,23 @@
 /*京东直播nav开始*/
 .Live{
-	overflow: hidden;
+	width: 100%;
 }
 .Live1{
 	margin: 0 auto;
-	margin-top: 10px;
+	height: 24px;
 }
-.Live1-1{
-	border:2px solid black;
+.Live1-1 {
+	display: block;
 	width: 65px;
-	margin-top: 50px;
-	margin-left: 530px;
-}
-.Live1-2{
-	float: left;
-	width: 120px;
-	height: 30px;
-	font-size: 30px;
-	margin-left: 620px;
-	margin-top: -23px;
-	font-family: 微软雅黑;
-}
-.Live1-3{
-	float: right;
-	border:2px solid black;
-	width: 65px;
-	margin-right: 520px;
-	margin-top: -3px;
+	height: 2px;
+	line-height: 24px;
+	border-top: 4px solid #000;
 }
 /*京东直播nav结束*/
 /*大牌开始*/
 /*大牌1开始*/
 .Live2{
-	margin-left: 80px;
-	margin-top: 30px;
+
 }
 .Live2-1{
 	width: 390px;
