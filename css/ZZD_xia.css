@@ -8,6 +8,7 @@ a{
 	margin-top: 20px;
 	margin-bottom: 20px;
 	height: 45px;
+	width: 100px;
 }
 .zd_title_center{
 	margin-left: 475px;/*整体的左边距*/
@@ -20,15 +21,6 @@ a{
 	display: block;
 	margin: 0 auto;
 	font-size: 35px;
-}
-.zd_bottom{
-	margin-left: 80px;
-	padding: 0;
-	width: 1200px;
-}
-.zd_bottom_row{
-	width: 1200px;
-	height: 305px;
 }
 
 .zd_bottom_row_1{
@@ -82,13 +74,7 @@ a{
 	float: right;
 	margin: 30px 10px 0 0;
 }
-
-
-
-
-
 .zd_bottom_row2{
-	width: 1200px;
 	height: 305px;
 	margin-top: 12.5px;
 }
