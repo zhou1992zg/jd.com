@@ -17,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="css/Ranking List.css">
     <link rel="stylesheet" type="text/css" href="css/Live broadcast.css">
     <link rel="stylesheet" type="text/css" href="css/ZZD_xia.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index_js.css"/>
 </head>
 <body>
 <!-- header 部分 start -->
@@ -80,10 +81,13 @@
     				<i></i>
     			</li>
     			<li class="space"></li>
-    			<li>
+    			<li onmouseover="showImg()" onmouseout="outImg()">
     				<a href="#" class="mobile">手机京东
     					<img src="images/mobile.png" width="60" height="60" alt="">
     				</a>
+                    <ul class="mobile_show">
+                        <li id="show" class="mobile_show_box1">时间多点我能全部搞定</li>
+                    </ul>
     			</li>
     		</ul>
     	</div>
@@ -144,9 +148,9 @@
 <!--  中间分类区域 start -->
     <div class="w grid">
     	<div class="grid-col1 fl">
-            <div class="ad">
+            <!-- <div class="ad">
                 <img src="images/ad.png" class="ad-img" alt="我们已经在解决了">
-            </div>
+            </div> -->
     		<ul>
     			<li><a href="#">家用电器</a></li>
     			<li><a href="#">家用电器</a>/<a href="#">手机</a>/<a href="#">运营商</a></li>
