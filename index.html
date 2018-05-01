@@ -17,15 +17,29 @@
     <link rel="stylesheet" type="text/css" href="css/Ranking List.css">
     <link rel="stylesheet" type="text/css" href="css/Live broadcast.css">
     <link rel="stylesheet" type="text/css" href="css/ZZD_xia.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index_js.css"/>
 </head>
 <body>
 <!-- header 部分 start -->
-<header>
-	<div class="w">
-		<a href="#">
-			<img src="images/head/5adff083Nea2bf86e.jpg" height="80" width="1190" alt="">
-		</a>
-	</div>
+<div>
+<div class="clearfix header_box" id="dd">
+    <div class="w clearfix" id="bb">
+        <p class="fl header_box_img clearfix"></p>
+        <div class="form_box clearfix" id="aa">
+            <input type="text" placeholder="扫描仪">
+            <button><i></i></button>
+            <!-- 按钮的意思 双标签 等价于 <input type="button" value=""> -->
+        </div>
+    </div>
+</div>
+</div>
+<header id="header_img">
+    <div class="w button_header">
+        <a href="#">
+            <img src="images/head/5adff083Nea2bf86e.jpg" height="80" width="1190">
+        </a>
+        <button class="btn" id="btn" onclick="closeImg()">x</button>
+    </div>
 </header>
 <!-- header 部分 end -->
 <!-- 快速导航栏 start -->
@@ -66,11 +80,14 @@
     				<i></i>
     			</li>
     			<li class="space"></li>
-    			<li>
-    				<a href="#" class="mobile">手机京东
-    					<img src="images/mobile.png" width="60" height="60" alt="">
-    				</a>
-    			</li>
+    			<li onmouseover="showImg()" onmouseout="outImg()">
+                    <a href="#" class="mobile">手机京东
+                        <img src="images/mobile.png" width="60" height="60" alt="">
+                    </a>
+                    <ul class="mobile_show">
+                        <li id="show" class="mobile_show_box1">时间多点我能全部搞定</li>
+                    </ul>
+                </li>
     		</ul>
     	</div>
     </div>
@@ -130,9 +147,6 @@
 <!--  中间分类区域 start -->
     <div class="w grid">
     	<div class="grid-col1 fl">
-            <div class="ad">
-                <img src="images/ad.png" class="ad-img" alt="222">
-            </div>
     		<ul>
     			<li><a href="#">家用电器</a></li>
     			<li><a href="#">家用电器</a>/<a href="#">手机</a>/<a href="#">运营商</a></li>
@@ -1726,5 +1740,6 @@
 	</div>
 </footer>
 <!-- 页面底部分 end -->
+    <script type="text/javascript" src="js/header.js"></script>
 </body>
 </html>
