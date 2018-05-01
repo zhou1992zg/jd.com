@@ -57,9 +57,48 @@ body {
   font-style: normal;
 }
 /* header部分 */
+.header_box {
+	position: relative;
+	height: 50px;
+	border-bottom: 2px solid red;
+	margin-top: -52px;
+}
+.header_box_img {
+	margin-top: 5px;
+	width: 125px;
+	height: 40px;
+	background: url(../images/sprite.head@2x.png) no-repeat;
+}
 header {
 	height: 80px;
 	background-color: #7205c3;
+}
+.form_box {
+	width: 550px;
+	height: 35px;
+	position: absolute;
+	top: 10px;
+	left: 445px;
+	margin-top: -52px;
+}
+.form_box input {
+	width: 495px;
+	height: 33px;
+	border: 1px solid #f10215;
+	float: left;
+	font-size: 14px;
+	padding-left: 3px;
+}
+.form_box button {
+	width: 50px;
+	height: 35px;
+	background-color: #f10215;
+	float: left;
+}
+.form_box button i {
+	font-family: 'icomoon';
+	font-style: normal;
+	color: #fff;
 }
 .button_header {
 	position: relative;
@@ -375,3 +414,8 @@ footer a {
 	margin: 0 auto;
 	width: 1190px;
 }/*添加了一个京东页面的内部宽度1190px*/
+
+/*不占位隐藏*/
+.dp_n {
+	display: none;
+}
