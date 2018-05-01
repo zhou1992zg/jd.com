@@ -102,6 +102,7 @@
 	height: 450px;
 }
 .Album_style{
+	position: relative;
 	margin-left: 20px;
 }
 .Album_style2{
@@ -129,18 +130,21 @@
 .Album_style4 a:hover{
 	color: #666;
 }
-.ltgt{
-	position: absolute;
-	z-index: 2px;
-	left: 480px;
-	top: 980px;
+.lt,.gt{
 	background:rgba(0,0,0,0.1);
 	font-size: 30px;
 	height: 40px;
 	width: 20px;
 }
-#gt{
-	left: 848px;
+.lt {
+	position: absolute;
+	left: -20px;
+	top: 190px;
+}
+.gt {
+	position: absolute;
+	left: 350px;
+	top: 190px;
 }
 /*专辑结束*/
 /*领劵中心开始*/
