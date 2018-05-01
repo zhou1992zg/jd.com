@@ -7,6 +7,22 @@ var Header_img=document.getElementById("header_img");
 function closeImg(){
 	Header_img.setAttribute("class","dp_n");
 }
+
+
+
+var show=document.getElementById("show");
+function showImg(){
+	show.setAttribute("class","mobile_show_box");
+}
+var show=document.getElementById("show");
+function outImg(){
+	show.setAttribute("class","mobile_show_box1");
+}
+
+
+
+
+
 // /**
 //  * 这是个倒计时器
 //  * @param {string} hover 倒计时？小时
@@ -35,7 +51,10 @@ function closeImg(){
 // },1000)
 
 
-
+/**
+* 这是top悬停搜索框效果
+*
+ */
 var dd=document.getElementById('dd');
 var aa=document.getElementById('aa');
 var bb=document.getElementById('bb');
@@ -54,7 +73,8 @@ var bb=document.getElementById('bb');
 			dd.style.zIndex='99999999999';
 			aa.style.top=60+'px';
 			aa.style.left=320+'px';
-			dd.parentNode.style.width=1440+'px';
+			aa.style.width=1190+'px';
+			dd.parentNode.style.width=100+'%';
 			dd.parentNode.style.height=50+'px';
 			dd.parentNode.style.borderBottom='2px solid red';
 			dd.parentNode.style.position='fixed';
