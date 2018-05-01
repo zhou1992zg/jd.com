@@ -54,7 +54,7 @@ var bb=document.getElementById('bb');
 			dd.style.zIndex='99999999999';
 			aa.style.top=60+'px';
 			aa.style.left=320+'px';
-			dd.parentNode.style.width=100+'%';
+			dd.parentNode.style.width=1440+'px';
 			dd.parentNode.style.height=50+'px';
 			dd.parentNode.style.borderBottom='2px solid red';
 			dd.parentNode.style.position='fixed';
@@ -77,7 +77,7 @@ var bb=document.getElementById('bb');
 	}
 
 
-	
+
 
 
 
