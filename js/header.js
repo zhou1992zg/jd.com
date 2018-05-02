@@ -23,32 +23,45 @@ function outImg(){
 
 
 
-// /**
-//  * 这是个倒计时器
-//  * @param {string} hover 倒计时？小时
-//  * @param {string} minntes 倒计时多少分钟
-//  * @param {number=} seconds 倒计时多少秒
-//  * @return {Object} 返回值描述
-//  */
+/**
+ * 这是个秒杀倒计时器
+ * @param {string} hover 倒计时？小时
+ * @param {string} minntes 倒计时多少分钟
+ * @param {number=} seconds 倒计时多少秒
+ * @return {Object} 返回值描述
+ */
 
-// var Hover=document.getElementById('hover').innerHTML;
-// var Minntes=document.getElementById('minntes').innerHTML;
-// var Seconds=document.getElementById('seconds').innerHTML;
-// Time=setInterval(function countDown(h,m,s){
-// 	var Time_h=Number(h)*60*60*1000;
-// 	var Time_m=Number(m)*60*1000;
-// 	var Time_s=Number(s)*1000;
-// 	var Time_he=Time_h+Time_s+Time_m;
-// 	if (Time_he>0) {
-// 		Time_he-=1;
-// 		console.log(Time_he);
-// 	}else {
-// 		clearInterval(Time);
-// 		Hover='00';
-// 		Minntes='00';
-// 		Seconds='00';
-// 	}
-// },1000)
+var Hover=document.getElementById('hover');
+var Minntes=document.getElementById('minntes');
+var Seconds=document.getElementById('seconds');
+var Time_h=Number(10)*60*60;
+var Time_m=Number(10)*60;
+var Time_s=Number(10);
+var Time_he=Time_h+Time_s+Time_m;
+Time=setInterval(function (){
+		if (0<Time_he) {
+			Time_he=Time_he-1;
+		}else {
+			clearInterval(Time);
+		}
+		// return Time_he;
+		var timer=Time_he
+		var h=Math.floor(Time_he/(60*60));
+		timer%=60*60;
+		var m=Math.floor(timer/60);
+		timer%=60;
+		var s=Math.floor(timer);
+		Hover.innerHTML=getTwo(h);
+		Minntes.innerHTML=getTwo(m);
+		Seconds.innerHTML=getTwo(s);
+},1000);
+function getTwo(num){
+	if (num<10) num = '0'+num;
+	return num;
+}
+
+
+
 
 
 /**
